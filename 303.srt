@@ -1,0 +1,268 @@
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:00.506 --> 00:00:11.026 A:middle
+[ Silence ]
+
+00:00:11.526 --> 00:00:15.686 A:middle
+&gt;&gt; Hi and welcome to Integrating
+Passbook into your Ecosystem.
+
+00:00:16.056 --> 00:00:18.676 A:middle
+My name is Joelle Lam,
+an Engineering Manager
+
+00:00:18.676 --> 00:00:22.736 A:middle
+at the Apple Store App Team,
+also the Engineering Lead
+
+00:00:22.736 --> 00:00:26.436 A:middle
+of Apple Store Gift Card
+in Passbook from WWDC
+
+00:00:26.436 --> 00:00:28.696 A:middle
+to its launch in October.
+
+00:00:29.296 --> 00:00:33.746 A:middle
+Last year iOS 6 announced
+Passbook.
+
+00:00:34.616 --> 00:00:37.756 A:middle
+Passbook was this way you can
+include your boarding passes,
+
+00:00:38.086 --> 00:00:42.566 A:middle
+your movie tickets and more on
+your iPhone or your iPod Touch.
+
+00:00:44.056 --> 00:00:48.086 A:middle
+Now, us being the Apple
+Store Engineering Team,
+
+00:00:48.656 --> 00:00:52.616 A:middle
+we knew we wanted to be part of
+this, we knew we were missing
+
+00:00:52.616 --> 00:00:56.196 A:middle
+out if we didn't get involved
+in the Passbook Ecosystem.
+
+00:00:57.216 --> 00:01:03.006 A:middle
+So, very quickly came Apple
+Store Gift Card in Passbook.
+
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:00:57.216 --> 00:01:03.006 A:middle
+So, very quickly came Apple
+Store Gift Card in Passbook.
+
+00:01:04.396 --> 00:01:07.496 A:middle
+Now, I'm not from
+the Passbook Team.
+
+00:01:07.706 --> 00:01:10.776 A:middle
+If anything I'm more
+like you, I sat there
+
+00:01:10.896 --> 00:01:12.506 A:middle
+and watched the WWDC sessions,
+
+00:01:12.596 --> 00:01:15.816 A:middle
+I'm like an external
+developer looking
+
+00:01:15.816 --> 00:01:18.986 A:middle
+onto iOS technologies asking,
+
+00:01:19.776 --> 00:01:22.296 A:middle
+"How do I enrich
+the user experience?
+
+00:01:22.796 --> 00:01:26.436 A:middle
+How do I bring to life
+some everyday things,
+
+00:01:26.486 --> 00:01:29.596 A:middle
+these everyday things that
+used to exist in our pockets?"
+
+00:01:30.076 --> 00:01:33.986 A:middle
+OK. So, let's do
+a quick overview.
+
+00:01:33.986 --> 00:01:37.936 A:middle
+We're first going to talk
+about Apple Store Gift Card,
+
+00:01:38.236 --> 00:01:40.576 A:middle
+this is all about
+pulling back that curtain
+
+00:01:41.076 --> 00:01:42.106 A:middle
+and showing you a little bit
+
+00:01:42.106 --> 00:01:44.446 A:middle
+about what we did
+and why we did it.
+
+00:01:45.736 --> 00:01:48.316 A:middle
+Then we'll go into
+leveraging existing systems.
+
+00:01:48.516 --> 00:01:53.376 A:middle
+I thought this was so important
+because some of you guys are
+
+00:01:53.376 --> 00:01:57.766 A:middle
+out there, you have these huge
+systems and you're wondering,
+
+00:01:58.146 --> 00:02:00.546 A:middle
+"Can I bring Passbook
+to my Ecosystem?"
+
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:01:58.146 --> 00:02:00.546 A:middle
+"Can I bring Passbook
+to my Ecosystem?"
+
+00:02:01.226 --> 00:02:05.936 A:middle
+You have ASP downstream, how
+many weeks do I have to prepare
+
+00:02:05.936 --> 00:02:07.596 A:middle
+for it, to talk to a DVA just
+
+00:02:07.596 --> 00:02:10.126 A:middle
+to get a database
+let alone 3, right?
+
+00:02:11.466 --> 00:02:15.576 A:middle
+And then I have to do security
+review just to get the ACLs
+
+00:02:15.576 --> 00:02:19.206 A:middle
+to talk to my security
+systems or talk to my services.
+
+00:02:19.236 --> 00:02:24.406 A:middle
+So, leveraging existing systems
+is all about bringing Passbook
+
+00:02:24.406 --> 00:02:28.426 A:middle
+to your Ecosystem no
+matter how complex it is.
+
+00:02:30.436 --> 00:02:32.666 A:middle
+Then we'll talk about
+determining complexity.
+
+00:02:33.676 --> 00:02:38.186 A:middle
+This is kind of an experience of
+wisdom of what we think it talks
+
+00:02:38.186 --> 00:02:41.336 A:middle
+to determine the level of
+effort to build your pass.
+
+00:02:42.546 --> 00:02:46.136 A:middle
+And finally, we'll do some
+web services tips and tricks.
+
+00:02:46.136 --> 00:02:49.456 A:middle
+These tips and tricks are kind
+of separated by complexity level
+
+00:02:49.456 --> 00:02:52.006 A:middle
+so they'll be something
+there a lot of good meat
+
+00:02:52.006 --> 00:02:53.976 A:middle
+but something there for
+every single one of you guys.
+
+00:02:55.136 --> 00:02:59.026 A:middle
+So, let's get started.
+
+00:02:59.076 --> 00:03:03.156 A:middle
+Apple Store Gift Card is all
+about giving the people you care
+
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:02:59.076 --> 00:03:03.156 A:middle
+Apple Store Gift Card is all
+about giving the people you care
+
+00:03:03.156 --> 00:03:05.246 A:middle
+about the products
+you love, right?
+
+00:03:06.066 --> 00:03:09.466 A:middle
+If you look at this life cycle
+
+00:03:09.466 --> 00:03:13.466 A:middle
+of our gift card somebody
+will go into the app
+
+00:03:13.736 --> 00:03:16.426 A:middle
+or on the website and
+they'll purchase a gift card
+
+00:03:17.266 --> 00:03:21.996 A:middle
+and this gift card will then
+get emailed to the giftee.
+
+00:03:23.206 --> 00:03:24.806 A:middle
+So, when we're delivering
+that card,
+
+00:03:24.806 --> 00:03:27.706 A:middle
+we're actually delivering
+an email with a link in it
+
+00:03:28.386 --> 00:03:31.676 A:middle
+which allows that person, the
+giftee, to receive that card.
+
+00:03:32.866 --> 00:03:34.826 A:middle
+Finally, that card is
+open to the Passbook
+
+00:03:34.826 --> 00:03:37.336 A:middle
+and the user can
+look at the pass.
+
+00:03:38.586 --> 00:03:42.156 A:middle
+From there the Passbook can--
+the gift card can be brought
+
+00:03:42.156 --> 00:03:45.536 A:middle
+into a store used
+online and redeemed.
+
+00:03:46.406 --> 00:03:47.916 A:middle
+You can use it to
+purchase something.
+
+00:03:48.516 --> 00:03:51.076 A:middle
+And if immediately when
+that purchase occurs,
+
+00:03:52.246 --> 00:03:55.496 A:middle
+we send an update and the update
+will actually update the path
+
+00:03:55.496 --> 00:03:59.056 A:middle
+and the giftee can now see
+their new value in the pass.
+
+00:03:59.946 --> 00:04:01.636 A:middle
+Of course if they
+have a value left,
+
