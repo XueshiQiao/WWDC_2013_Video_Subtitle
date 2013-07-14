@@ -15,5 +15,11 @@ WWDC 2013 视频字幕
 
 在用[extract.py][1]脚本获得字幕的时候比较慢，可能是我这边网络的问题，大家如果通过上面的两个脚本拿到了剩余Video的字幕欢迎pull request和大家分享。
 
+###3. 有图有真相
+
+![Pic1](https://github.com/qiaoxueshi/WWDC_2013_Video_Subtitle/blob/master/sample_wwdc_subtitle.jpg "Pic1")
+
+![Pic2](https://github.com/qiaoxueshi/WWDC_2013_Video_Subtitle/blob/master/sample_wwdc_subtitle2.jpg "Pic1")
+
 
 [1]: https://gist.github.com/qiaoxueshi/5976402
