@@ -17,9 +17,9 @@ WWDC 2013 视频字幕
 
 ###3. 有图有真相
 
-![Pic1](https://github.com/qiaoxueshi/WWDC_2013_Video_Subtitle/blob/master/sample_wwdc_subtitle.jpg "Pic1")
+![Pic1](sample_wwdc_subtitle.jpg "Pic1")
 
-![Pic2](https://github.com/qiaoxueshi/WWDC_2013_Video_Subtitle/blob/master/sample_wwdc_subtitle2.jpg "Pic1")
+![Pic2](sample_wwdc_subtitle2.jpg "Pic2")
 
 
 [1]: https://gist.github.com/qiaoxueshi/5976402
