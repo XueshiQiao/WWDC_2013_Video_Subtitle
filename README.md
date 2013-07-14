@@ -10,7 +10,7 @@ WWDC 2013 视频字幕
 
 * [wwdc_combine_webvtt.rb](https://gist.github.com/qiaoxueshi/5992949) 这个gist的功能是将上面获得的很多`fileSequence*.webvtt`文件合并一整个文件，其实格式理论上还是webvtt，不过我试了一下，在MPlayerX中是可以完美的显示出来的。这个script是现学的ruby现用，欢迎批评和pull request。
 
-* 下载的字幕是以Video的序号命名的, @lexrus 这里提供了一个[序号和Video名称的对应表](https://gist.github.com/lexrus/5792296#file-title-txt)。
+* 下载的字幕是以Video的序号命名的, [@lexrus](https://github.com/lexrus) 这里提供了一个[序号和Video名称的对应表](https://gist.github.com/lexrus/5792296#file-title-txt)。
 
 ###2.欢迎大家提交pull request补充其他video字幕
 
