@@ -1,9 +1,10 @@
-WWDC_2013_Video_Subtitle
+WWDC 2013 视频字幕（英文）
 ========================
-WWDC 2013 视频字幕***（英文）***
 
 
-###1. How I get them?    2 Gist!
+###1. How I get them? 
+
+这要从下面1和2两个gist说起。。。
 
 1. [extract.py][1] (fork from [Nicholas Riley](https://gist.github.com/nriley)'s [extract.py](https://gist.github.com/nriley/5874460))  用来获取视频的`fileSequence*.webvtt`文件，该文件是web格式的英文字幕文件，苹果把字幕文件切分成了很多小段，每一段是一个独立的`fileSequence*.webvtt`文件。(`*`表示序号，从0开始)，使用的方法我写在了Comment里了。
 	
