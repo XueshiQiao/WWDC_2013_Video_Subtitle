@@ -3407,3 +3407,681 @@ a.m. to Sunday 6:00 a.m.,
 00:46:58.316 --> 00:46:59.886 A:middle
 there's just 23 hours.
 
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:00.056 --> 00:47:02.876 A:middle
+But then again, from
+Sunday 6:00 a.m.
+
+00:47:02.926 --> 00:47:05.946 A:middle
+to Monday 6:00 a.m. there's
+a period of 24 hours.
+
+00:47:06.516 --> 00:47:10.926 A:middle
+So, what happens every year is
+same old cliché joke is try it
+
+00:47:10.926 --> 00:47:13.736 A:middle
+out, "Oh, you're going to have
+one hour less of sleep tonight."
+
+00:47:13.736 --> 00:47:15.156 A:middle
+And that happens, you know,
+
+00:47:15.156 --> 00:47:18.696 A:middle
+Saturday night all the news
+reporters talk about that
+
+00:47:18.986 --> 00:47:21.676 A:middle
+to remind people about the
+Daylight Saving Time change.
+
+00:47:21.916 --> 00:47:24.016 A:middle
+One hour less sleep
+but that occurs
+
+00:47:24.016 --> 00:47:25.246 A:middle
+in the middle of the weekend.
+
+00:47:25.586 --> 00:47:30.246 A:middle
+That's kind of the point why
+the U.S. does that transition
+
+00:47:30.246 --> 00:47:31.216 A:middle
+in the middle of the weekend.
+
+00:47:32.236 --> 00:47:35.336 A:middle
+Well, let's go back and
+shift our timeline again back
+
+00:47:35.386 --> 00:47:37.246 A:middle
+to the 2:30 example.
+
+00:47:38.516 --> 00:47:42.426 A:middle
+So, if I ask for
+NSCalendarMatchNextTime
+
+00:47:42.686 --> 00:47:46.956 A:middle
+to get 3:00 a.m., what will
+happen is a 24 hour period
+
+00:47:46.956 --> 00:47:49.966 A:middle
+occurs from Friday
+to Saturday then a 23
+
+00:47:49.966 --> 00:47:54.216 A:middle
+and a half hour period occurs
+between alarm clock firings
+
+00:47:54.636 --> 00:47:57.326 A:middle
+on Sunday morning
+and Monday morning.
+
+00:47:57.326 --> 00:47:58.996 A:middle
+So, you've kind of split
+the different there.
+
+00:47:59.136 --> 00:48:04.426 A:middle
+On the other hand, if
+you pass in MatchNextTime
+
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:47:59.136 --> 00:48:04.426 A:middle
+On the other hand, if
+you pass in MatchNextTime
+
+00:48:04.796 --> 00:48:08.656 A:middle
+PreservingSmallerUnits,
+you get a 24-hour period
+
+00:48:08.656 --> 00:48:11.836 A:middle
+between alarm clock
+firings on Saturday morning
+
+00:48:11.966 --> 00:48:16.296 A:middle
+and Sunday morning and then
+your short night in a sense
+
+00:48:16.556 --> 00:48:19.456 A:middle
+or a short day is
+between Sunday and Monday.
+
+00:48:20.076 --> 00:48:22.226 A:middle
+And so, it's really Monday
+morning where you end
+
+00:48:22.226 --> 00:48:23.846 A:middle
+up losing that hour of sleep.
+
+00:48:25.896 --> 00:48:29.476 A:middle
+And finally, if you pass
+in the MatchPreviousTime
+
+00:48:30.236 --> 00:48:32.736 A:middle
+PreservingSmallerUnits,
+you get the same kind
+
+00:48:32.736 --> 00:48:35.876 A:middle
+of pattern we saw originally
+where there is a 24-hour period,
+
+00:48:36.196 --> 00:48:38.976 A:middle
+a 23-hour period and
+a 24-hour period.
+
+00:48:43.186 --> 00:48:45.556 A:middle
+If you need to enumerate
+matches,
+
+00:48:45.556 --> 00:48:51.396 A:middle
+that is not just find one mixed
+instance of a match but you want
+
+00:48:51.396 --> 00:48:55.876 A:middle
+to find all times that
+match certain criteria
+
+00:48:56.236 --> 00:49:00.446 A:middle
+and enumerate them all and
+do some work for each match,
+
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:48:56.236 --> 00:49:00.446 A:middle
+and enumerate them all and
+do some work for each match,
+
+00:49:01.076 --> 00:49:02.436 A:middle
+then you should use this method.
+
+00:49:03.036 --> 00:49:05.446 A:middle
+The enumerate dates starting
+
+00:49:05.446 --> 00:49:08.526 A:middle
+after date method takes the
+same kind of parameters,
+
+00:49:08.526 --> 00:49:11.466 A:middle
+the first parameter, the date
+at which to begin searching.
+
+00:49:11.876 --> 00:49:16.066 A:middle
+It takes your date components
+that you want to have matched
+
+00:49:16.356 --> 00:49:18.956 A:middle
+and some options, the
+options I've explained
+
+00:49:20.096 --> 00:49:22.136 A:middle
+and you pass in a block.
+
+00:49:22.846 --> 00:49:24.386 A:middle
+The block takes three
+parameters.
+
+00:49:24.386 --> 00:49:27.566 A:middle
+The first two parameters
+of the block are the date
+
+00:49:27.866 --> 00:49:29.226 A:middle
+that the algorithm found
+
+00:49:30.326 --> 00:49:33.806 A:middle
+and a Boolean telling you
+whether it found an exact match
+
+00:49:33.916 --> 00:49:35.006 A:middle
+or not.
+
+00:49:35.006 --> 00:49:38.946 A:middle
+If the algorithm had to fudge
+the answer based, you know,
+
+00:49:38.946 --> 00:49:42.866 A:middle
+give you a 1:30 or 3:30
+instead of the 2:30 you asked
+
+00:49:42.866 --> 00:49:44.436 A:middle
+for in our previous example.
+
+00:49:45.246 --> 00:49:46.686 A:middle
+This algorithm will tell you
+
+00:49:47.116 --> 00:49:49.396 A:middle
+with that Boolean whether
+it had to that or not.
+
+00:49:49.986 --> 00:49:55.166 A:middle
+Then there's the third parameter
+which is the mechanism you use
+
+00:49:55.166 --> 00:49:58.406 A:middle
+to stop the algorithm
+when you want to stop it.
+
+00:49:58.806 --> 00:50:01.756 A:middle
+So, we've used this in
+other enumerate methods,
+
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:49:58.806 --> 00:50:01.756 A:middle
+So, we've used this in
+other enumerate methods,
+
+00:50:01.756 --> 00:50:02.976 A:middle
+it's the same kind of pattern.
+
+00:50:03.666 --> 00:50:06.236 A:middle
+We pass in a pointer
+to a Boolean
+
+00:50:06.736 --> 00:50:09.436 A:middle
+and when the condition
+arises where you want
+
+00:50:09.436 --> 00:50:15.196 A:middle
+to stop the enumeration, you
+simply set the value pointed to,
+
+00:50:15.896 --> 00:50:18.616 A:middle
+you know, star stop
+in this case to "Yes".
+
+00:50:19.116 --> 00:50:22.106 A:middle
+You don't need to set the
+Boolean to "No" every time
+
+00:50:22.106 --> 00:50:24.166 A:middle
+to keep enumerating, it
+will keep doing that.
+
+00:50:24.306 --> 00:50:27.736 A:middle
+You don't need to
+set it to know ever.
+
+00:50:28.056 --> 00:50:30.696 A:middle
+You just need to set it to
+"Yes" once when you want
+
+00:50:30.696 --> 00:50:31.996 A:middle
+to stop the enumeration.
+
+00:50:32.526 --> 00:50:39.246 A:middle
+So, there were some
+operations that are very common
+
+00:50:39.246 --> 00:50:41.236 A:middle
+and we found lots of
+people want to do a lot.
+
+00:50:41.236 --> 00:50:47.276 A:middle
+Let me talk a little bit here,
+give me few minutes of talk
+
+00:50:47.276 --> 00:50:51.766 A:middle
+about testing these algorithms
+and testing the calculations
+
+00:50:51.766 --> 00:50:53.966 A:middle
+that you're doing
+within your application.
+
+00:50:54.506 --> 00:50:56.216 A:middle
+Well, the first thing
+you need to do is
+
+00:50:56.216 --> 00:50:58.856 A:middle
+of course consider
+the interesting cases.
+
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:51:00.066 --> 00:51:02.016 A:middle
+Well, what are the
+interesting cases?
+
+00:51:02.016 --> 00:51:06.026 A:middle
+Well, an application today
+might be used worldwide
+
+00:51:06.026 --> 00:51:08.626 A:middle
+and so you need to
+consider different locales
+
+00:51:08.626 --> 00:51:13.066 A:middle
+and different calendars that
+the local users, you know,
+
+00:51:13.346 --> 00:51:15.266 A:middle
+in a given area might be using.
+
+00:51:15.956 --> 00:51:18.986 A:middle
+So, you need to test different
+locales and calendars.
+
+00:51:19.086 --> 00:51:23.366 A:middle
+Of course, these different users
+around the world are existing
+
+00:51:23.366 --> 00:51:26.246 A:middle
+and living in different
+time zones so it's good
+
+00:51:26.246 --> 00:51:28.646 A:middle
+to get some testing within
+different time zones.
+
+00:51:29.106 --> 00:51:31.696 A:middle
+But you also need to
+consider the cycle boundaries,
+
+00:51:31.696 --> 00:51:33.286 A:middle
+where are the interesting cases.
+
+00:51:33.746 --> 00:51:36.306 A:middle
+Well, these various cycles
+of time, for example,
+
+00:51:36.306 --> 00:51:39.176 A:middle
+hours go from, say, 0 to 23
+
+00:51:39.456 --> 00:51:43.106 A:middle
+and then the cycle repeats the
+next day, 0 to 23 and so on.
+
+00:51:43.546 --> 00:51:47.476 A:middle
+So, an example of a cycle
+boundary is the end of a day
+
+00:51:47.536 --> 00:51:50.576 A:middle
+or the beginning of a day
+is the same thing, midnight.
+
+00:51:51.896 --> 00:51:54.876 A:middle
+But you also have interesting
+things that can happen
+
+00:51:54.876 --> 00:51:57.506 A:middle
+at the end of months or at
+the end of years or beginning
+
+00:51:57.506 --> 00:51:58.786 A:middle
+of years, it's the same thing.
+
+00:51:59.336 --> 00:52:04.356 A:middle
+In some cases, some calendars,
+the Era is really important
+
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:51:59.336 --> 00:52:04.356 A:middle
+In some cases, some calendars,
+the Era is really important
+
+00:52:05.336 --> 00:52:08.646 A:middle
+to also test for
+and keep in mind.
+
+00:52:10.156 --> 00:52:11.776 A:middle
+What kind of things
+do you look for?
+
+00:52:11.776 --> 00:52:13.766 A:middle
+Well, you look for
+incorrect results.
+
+00:52:14.656 --> 00:52:17.966 A:middle
+It's very obvious but very
+dull answer, right and obvious.
+
+00:52:18.256 --> 00:52:19.896 A:middle
+Well, you look for
+incorrect results.
+
+00:52:20.016 --> 00:52:24.256 A:middle
+Well, the real question here is,
+how do you know that the answers
+
+00:52:24.256 --> 00:52:26.906 A:middle
+that you're seeing, that the
+answers you're getting are the
+
+00:52:26.906 --> 00:52:27.986 A:middle
+correct answers?
+
+00:52:29.466 --> 00:52:30.846 A:middle
+Well, what can you do?
+
+00:52:30.846 --> 00:52:33.836 A:middle
+You have to find some sort
+of authoritative information.
+
+00:52:34.176 --> 00:52:37.586 A:middle
+Like, how do I know that
+it's, you know, a certain year
+
+00:52:37.586 --> 00:52:41.376 A:middle
+within the Hebrew Calendar, I'm
+being told 5,700 and something.
+
+00:52:41.486 --> 00:52:43.166 A:middle
+Well, how do I know
+that's correct?
+
+00:52:43.656 --> 00:52:46.416 A:middle
+Well, you have to find some sort
+of authoritative information.
+
+00:52:46.416 --> 00:52:49.716 A:middle
+Well, there's these old
+fashion things called Almanacs
+
+00:52:49.716 --> 00:52:53.106 A:middle
+which are going to help in
+books and of course nowadays,
+
+00:52:53.106 --> 00:52:54.936 A:middle
+I tend to use the internet a lot
+
+00:52:55.496 --> 00:52:57.556 A:middle
+and so I do a search
+on the internet.
+
+00:52:57.776 --> 00:53:00.016 A:middle
+What is the current
+Islamic Calendar year?
+
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:52:57.776 --> 00:53:00.016 A:middle
+What is the current
+Islamic Calendar year?
+
+00:53:00.256 --> 00:53:00.786 A:middle
+For example.
+
+00:53:01.556 --> 00:53:04.396 A:middle
+And I don't just look at
+one website of course.
+
+00:53:04.496 --> 00:53:07.716 A:middle
+I look at many websites
+and compare their answer.
+
+00:53:08.226 --> 00:53:10.456 A:middle
+And you can also ask people.
+
+00:53:10.556 --> 00:53:14.286 A:middle
+So, if you have people
+that you know or can ask
+
+00:53:14.286 --> 00:53:19.336 A:middle
+about the answer, you know, you
+can verify it with real people
+
+00:53:19.516 --> 00:53:22.326 A:middle
+and I'll get to that--
+back to that in a second.
+
+00:53:23.126 --> 00:53:24.556 A:middle
+So, how do you test?
+
+00:53:25.706 --> 00:53:28.986 A:middle
+Well, to literally
+test of course,
+
+00:53:28.986 --> 00:53:31.266 A:middle
+you have to turn off the
+time syncing on the device,
+
+00:53:31.266 --> 00:53:35.316 A:middle
+on the computer or on iPhone
+or iPad, what have you.
+
+00:53:36.426 --> 00:53:39.166 A:middle
+Then you, of course, you
+can set the clock manually.
+
+00:53:39.926 --> 00:53:42.006 A:middle
+You can set the time
+zone to different values.
+
+00:53:42.006 --> 00:53:44.086 A:middle
+You can set the calendar
+in locale
+
+00:53:44.416 --> 00:53:47.836 A:middle
+to different values
+manually and, you know,
+
+00:53:48.076 --> 00:53:49.676 A:middle
+try out your application.
+
+00:53:51.186 --> 00:53:54.596 A:middle
+But, perhaps a more
+valuable thing to do is
+
+00:53:54.596 --> 00:53:57.836 A:middle
+to develop some variety
+within your beta tester pool.
+
+00:53:58.336 --> 00:54:02.636 A:middle
+So, if, you know, assuming you
+have some people that you ask
+
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:53:58.336 --> 00:54:02.636 A:middle
+So, if, you know, assuming you
+have some people that you ask
+
+00:54:02.716 --> 00:54:08.406 A:middle
+to beta test your application,
+you can try to collect a group
+
+00:54:08.466 --> 00:54:12.186 A:middle
+of people which live in
+different time zones,
+
+00:54:12.186 --> 00:54:15.026 A:middle
+which live in different
+locales of the world
+
+00:54:15.366 --> 00:54:16.326 A:middle
+and they will naturally
+
+00:54:16.326 --> 00:54:19.826 A:middle
+of course know the right answer
+'cause at worse, they can look
+
+00:54:19.826 --> 00:54:23.926 A:middle
+at a newspaper or ask their
+friend what the day is
+
+00:54:23.926 --> 00:54:24.626 A:middle
+if they don't know.
+
+00:54:25.046 --> 00:54:28.346 A:middle
+But they'll know what the right
+answers are and they'll be able
+
+00:54:28.346 --> 00:54:32.996 A:middle
+to tell you what, you know,
+what you're doing wrong
+
+00:54:32.996 --> 00:54:36.316 A:middle
+when something happens that's
+wrong within their application.
+
+00:54:36.776 --> 00:54:39.416 A:middle
+But another thing you can
+do is direct their testing.
+
+00:54:39.416 --> 00:54:42.186 A:middle
+Tell them, you know,
+what-- if you say, "Well,
+
+00:54:42.186 --> 00:54:45.836 A:middle
+this guy in my beta
+tester pool lives in China.
+
+00:54:45.836 --> 00:54:46.736 A:middle
+I know he lives in China.
+
+00:54:47.316 --> 00:54:51.156 A:middle
+You can ask him specifically,
+"Can you test, you know,
+
+00:54:51.226 --> 00:54:52.306 A:middle
+this or that bit
+
+00:54:52.306 --> 00:54:54.516 A:middle
+of functionality in
+this or that way?"
+
+00:54:54.516 --> 00:54:56.146 A:middle
+So, you can direct
+their testing rather
+
+00:54:56.146 --> 00:54:58.536 A:middle
+than just giving them
+the app and say, "Oh,
+
+00:54:58.536 --> 00:55:01.176 A:middle
+here's a new version,
+go try it out."
+
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:54:58.536 --> 00:55:01.176 A:middle
+here's a new version,
+go try it out."
+
+00:55:01.816 --> 00:55:06.196 A:middle
+So, I've talked about various
+kinds of common operations
+
+00:55:06.196 --> 00:55:09.856 A:middle
+and we've added some API for
+and there are many new methods
+
+00:55:09.856 --> 00:55:11.916 A:middle
+that we added that I
+didn't talk about today.
+
+00:55:11.916 --> 00:55:15.786 A:middle
+You have to go and look at
+the NSCalendar documentation,
+
+00:55:15.786 --> 00:55:19.116 A:middle
+the NSCalendar.h
+Header to see those.
+
+00:55:19.866 --> 00:55:23.316 A:middle
+If you had some feedback
+on this talk, you can talk
+
+00:55:23.316 --> 00:55:25.816 A:middle
+to our Evangelist Paul Marcos.
+
+00:55:26.636 --> 00:55:29.546 A:middle
+The Date &amp; Time Programming
+Guide is very good.
+
+00:55:30.006 --> 00:55:31.666 A:middle
+I recommend reading that.
+
+00:55:32.106 --> 00:55:34.206 A:middle
+And of course, there's
+the documentation
+
+00:55:34.206 --> 00:55:37.316 A:middle
+for the specific classes that
+I talked about like NSCalendar.
+
+00:55:37.546 --> 00:55:40.236 A:middle
+And of course, the
+Developer Forums, our resource
+
+00:55:40.236 --> 00:55:42.356 A:middle
+for asking questions
+about these things.
+
+00:55:42.986 --> 00:55:44.546 A:middle
+And with that, I thank you.
+
+00:55:45.516 --> 00:55:50.500 A:middle
+[ Applause ]
+
