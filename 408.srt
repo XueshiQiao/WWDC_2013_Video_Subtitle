@@ -629,13 +629,82 @@ accesses around,
 removing redundant
 operations, killing dead code,
 
-<HTML><HEAD>
-<TITLE>Request Timeout</TITLE>
-</HEAD><BODY>
-<H1>Request Timeout</H1>
-The server timed out while waiting for the browser's request.<P>
-Reference&#32;&#35;2&#46;455732b8&#46;1373789523&#46;0
-</BODY></HTML>
+WEBVTT
+X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
+
+00:08:56.826 --> 00:09:00.476 A:middle
+removing redundant
+operations, killing dead code,
+
+00:09:01.116 --> 00:09:05.026 A:middle
+but to do that effectively,
+the compiler needs to be able
+
+00:09:05.026 --> 00:09:08.926 A:middle
+to analyze which pointers
+may possibly be referring
+
+00:09:09.186 --> 00:09:12.566 A:middle
+to the same memory
+locations, that is,
+
+00:09:12.566 --> 00:09:14.086 A:middle
+which pointers may alias.
+
+00:09:15.656 --> 00:09:17.706 A:middle
+Thankfully, the C family
+
+00:09:17.706 --> 00:09:21.426 A:middle
+of languages do provide us some
+information that we can use
+
+00:09:22.086 --> 00:09:24.966 A:middle
+to do this, specifically
+the type system.
+
+00:09:25.616 --> 00:09:28.096 A:middle
+We use what we call
+type-based alias analysis
+
+00:09:28.096 --> 00:09:31.786 A:middle
+or strict aliasing which is
+enabled via the strict aliasing
+
+00:09:31.786 --> 00:09:35.766 A:middle
+flag which has been on by
+default since Xcode 4.6.
+
+00:09:36.056 --> 00:09:39.286 A:middle
+So if you created an app since
+then, this is already working
+
+00:09:39.286 --> 00:09:41.206 A:middle
+and bringing its
+power to bear for you.
+
+00:09:41.206 --> 00:09:43.676 A:middle
+If you have an older
+app, I encourage you
+
+00:09:43.676 --> 00:09:46.896 A:middle
+to check the setting, make
+sure that it's enabled,
+
+00:09:47.596 --> 00:09:49.136 A:middle
+look carefully at your code
+
+00:09:49.136 --> 00:09:50.926 A:middle
+because there are
+some hidden tricks
+
+00:09:50.926 --> 00:09:54.386 A:middle
+that if you're using undefined
+behavior by typecasting
+
+00:09:54.386 --> 00:09:58.536 A:middle
+between pointer types, there may
+be some hidden problems there,
+
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
