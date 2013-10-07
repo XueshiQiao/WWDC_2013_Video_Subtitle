@@ -11,7 +11,8 @@ WWDC 2013 视频字幕（英文，共100个）
 
 2. [wwdc_combine_webvtt.rb](https://gist.github.com/qiaoxueshi/5992949) 这个gist的功能是将上面获得的很多`fileSequence*.webvtt`文件合并一整个文件，其实格式理论上还是webvtt，不过我试了一下，在MPlayerX中是可以完美的显示出来的。这个script是现学的ruby现用，欢迎批评、pull request以及**改成python版**（偶是python文盲）。。。。 
 
-3. 下载的字幕是以Video的序号命名的, [@lexrus](https://github.com/lexrus) 童鞋的这个[gist](https://gist.github.com/lexrus/5792296#file-title-txt)里提供了序号和Video名称的对应表, 感谢他。 另外[@puttin](https://github.com/puttin)同学提供了一个批量修改文件名的[脚本](https://gist.github.com/puttin/6547007),点进去有图有真相哦，非常实用，Thx~
+3. 下载的字幕是以Video的序号命名的, [@lexrus](https://github.com/lexrus) 童鞋的这个[gist](https://gist.github.com/lexrus/5792296#file-title-txt)里提供了序号和Video名称的对应表, 感谢他。 另外[@puttin](https://github.com/puttin)同学提供了一个批量修改文件名的[脚本](https://gist.github.com/puttin/6547007),点进去有图有真相哦，非常实用，Thx~4. 
+
 
 
 ###2.欢迎大家提交pull request补充其他video字幕
@@ -20,8 +21,27 @@ WWDC 2013 视频字幕（英文，共100个）
 
 ``至此，所有的100字幕文件都已经完全提交，Enjoy!!!``
 
+##3.TODO
+###3.1 去重和格式化为真正srt格式的字幕文件（以支持手机播放）
+看了一天的Bash相关的命令，写下了下面的脚本来去重和格式化为srt格式的字幕文件，下面的`408.srt`改为你想格式化的文件名：
 
-###3. 有图有真相
+```
+awk -v RS="" '{gsub("\n", "-Z"); print}' 408.srt | awk '$0 !~/^WEB/ {print $0}' | uniq | awk '{printf "\n%s-Z%s", NR,$0 }'  | awk -v ORS="\n\n" '{gsub("-Z", "\n"); print}' >> 408-SD.srt
+```
+逐行解释下:
+
+```
+awk -v RS="" '{gsub("\n", "-Z"); print}' 408.srt   把换行换为-Z，在后面还要换回来
+awk '$0 !~/^WEB/ {print $0}'  去掉以WEB开头的
+uniq   去重
+awk '{printf "\n%s-Z%s", NR,$0 }' 加上行号
+awk -v ORS="\n\n" '{gsub("-Z", "\n"); print}' >> 408-SD.srt 格式化并把—Z换成\n
+```
+
+
+
+
+###4. 有图有真相
 
 ![Pic1](sample_wwdc_subtitle.jpg "Pic1")
 
