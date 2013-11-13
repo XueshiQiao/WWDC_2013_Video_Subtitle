@@ -80,10 +80,6 @@ That was helpful.
 So let's look at
 what that means.
 
-00:00:59.656 --> 00:01:02.776 A:middle
-So I have an interface here
-and I want to describe it once.
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -164,10 +160,6 @@ that we call constraints.
 00:01:53.906 --> 00:01:58.766 A:middle
 Now, what the automatic
 part is of Auto Layout is
-
-00:01:58.766 --> 00:02:00.336 A:middle
-that you provide the
-constraints for us
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -265,9 +257,6 @@ new dynamic text feature
 where the user can
 actually change the size
 
-00:02:59.116 --> 00:03:00.116 A:middle
-of the font on the fly.
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -360,10 +349,6 @@ if you're using Xcode
 00:03:55.926 --> 00:03:57.956 A:middle
 in Interface Builder, you can
 express these really powerful
-
-00:03:57.956 --> 00:04:00.316 A:middle
-relationships again, without
-writing a single line of code,
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -461,9 +446,6 @@ incrementally, bit by bit.
 00:04:57.276 --> 00:04:59.466 A:middle
 So, with Auto Layout,
 the kind of granularity
-
-00:04:59.466 --> 00:05:01.356 A:middle
-for this is per view controller
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -566,9 +548,6 @@ Auto Layout
 00:05:55.976 --> 00:05:58.916 A:middle
 and this property called
 translatesAutoresizing
-
-00:05:58.916 --> 00:06:00.086 A:middle
-MaskIntoConstraints.
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -675,10 +654,6 @@ has come to be.
 So you may know in 2011, we
 first introduced Auto Layout,
 
-00:06:58.586 --> 00:07:01.526 A:middle
-it was brand new for the
-Mac, brand new for Xcode,
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -764,10 +739,6 @@ accomplish and build those apps
 
 00:07:53.856 --> 00:07:57.386 A:middle
 that are just fantastic.
-
-00:07:57.426 --> 00:08:00.236 A:middle
-Now, as we talk about phases
-of development, right,
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -872,9 +843,6 @@ I may make a few tweaks here
 and there, but generally we're
 not touching our interface
 
-00:08:59.396 --> 00:09:01.016 A:middle
-for probably quite a while.
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -973,9 +941,6 @@ in the space, you're not
 yet thinking about
 how it's going
 
-00:09:59.946 --> 00:10:01.476 A:middle
-to react the changes around you.
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -1073,10 +1038,6 @@ or you might say,
 00:10:57.846 --> 00:10:58.686 A:middle
 I don't want Interface Builder
 
-00:10:58.686 --> 00:11:00.166 A:middle
-to reflect what my
-constraints at."
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -1160,10 +1121,6 @@ like that.
 All right, so let's
 get started here.
 
-00:11:59.106 --> 00:12:02.946 A:middle
-What we're going to do is we're
-going to build a splash screen
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -1243,10 +1200,6 @@ the credits.
 00:12:55.616 --> 00:12:56.976 A:middle
 And then, whoops, I
 didn't mean to do that.
-
-00:12:56.976 --> 00:13:00.736 A:middle
-And let's resize this, position
-them, all right, we're good.
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -1348,10 +1301,6 @@ All right!
 00:13:55.726 --> 00:13:58.896 A:middle
 So the first way I'm going to
 show you is via Control-Drag.
-
-00:13:59.076 --> 00:14:01.406 A:middle
-Just like you can
-control drag between views
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -1534,10 +1483,6 @@ height there is showing me,
 00:15:54.696 --> 00:15:56.366 A:middle
 the height of the string game.
 
-00:15:56.946 --> 00:16:01.596 A:middle
-So, Control-Drag is
-context sensitive.
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -1633,9 +1578,6 @@ for me later, but for now,
 I'm just going to add
 a height constraint.
 
-00:16:59.796 --> 00:17:00.976 A:middle
-But when I got my artwork,
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -1726,10 +1668,6 @@ really quickly.
 00:17:54.746 --> 00:17:58.216 A:middle
 And now I can finish off my view
 by adding my height constraint.
-
-00:17:58.606 --> 00:18:00.996 A:middle
-Great! I've go my two
-buttons done here.
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -1834,10 +1772,6 @@ strokes with constraints.
 One of these is reset the
 suggested constraints.
 
-00:18:58.106 --> 00:19:00.206 A:middle
-That will clear any
-existing constraints I have
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -1922,9 +1856,6 @@ no longer want.
 00:19:54.096 --> 00:19:55.716 A:middle
 I just select it
 and hit the Delete.
-
-00:19:56.216 --> 00:20:01.736 A:middle
-[ Applause ]
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -2014,10 +1945,6 @@ different controls here.
 00:20:54.306 --> 00:20:57.246 A:middle
 We're going to add one for being
 able to select my character
-
-00:20:57.596 --> 00:21:00.096 A:middle
-and I want to add one for
-adjusting the strategy
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -2110,10 +2037,6 @@ of the pieces of this popover.
 At the top, we have
 something called "Spacing
 
-00:21:58.036 --> 00:22:00.616 A:middle
-to Nearest Neighbor," OK,
-what's the nearest neighbor?
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -2205,10 +2128,6 @@ they're separate,
 but when I add constraints
 I cannot do both my Runtime
 
-00:22:58.826 --> 00:23:01.206 A:middle
-and Design Time Layout
-at the same time
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -2292,10 +2211,6 @@ are editable.
 00:23:51.616 --> 00:23:54.296 A:middle
 So what I can do
 is punch in 20, 20,
-
-00:23:54.866 --> 00:24:00.086 A:middle
-20 and what that will do is
-it will add a leading top
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -2388,9 +2303,6 @@ then it will size in position
 to views in the canvas
 to match the constraints.
 
-00:24:58.326 --> 00:25:00.036 A:middle
-So I click that, boom!
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -2480,10 +2392,6 @@ I know I want a vertical space.
 00:25:56.576 --> 00:25:59.016 A:middle
 So I know I want vertical
 spaces for both these labels
-
-00:25:59.526 --> 00:26:01.326 A:middle
-through their respective
-buttons.
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -2587,10 +2495,6 @@ otherwise., when I localize this
 in another language and
 the strings get really long
 
-00:26:58.456 --> 00:27:01.046 A:middle
-or really short, they might
-start occluding, overlapping,
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -2681,10 +2585,6 @@ so you can learn that
 and quickly get the constraints
 suggested that you want.
 
-00:27:59.996 --> 00:28:02.506 A:middle
-And now, I got a
-bunch of constraints
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -2765,10 +2665,6 @@ new game, oh it looks beautiful.
 Let's rotate it and, well,
 that's not exactly what I want.
 
-00:28:59.916 --> 00:29:01.636 A:middle
-We don't want that
-stuff to overlap.
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -2845,10 +2741,6 @@ line or actually in this case,
 
 00:29:56.466 --> 00:29:57.576 A:middle
 we'll show you all the options
-
-00:29:57.816 --> 00:30:00.056 A:middle
-so that you can quickly create
-the constraints that you want.
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -2941,10 +2833,6 @@ system thinks is the best
 00:30:54.506 --> 00:30:56.146 A:middle
 spacing in between
 these two views.
-
-00:30:56.146 --> 00:31:00.626 A:middle
-So I'm just going to use the
-standard space and there we go.
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -3039,10 +2927,6 @@ that and you're going
 to see it's open the
 same view over here
 
-00:31:58.536 --> 00:32:01.896 A:middle
-but now I can change attributes
-about this view to preview it.
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -3121,10 +3005,6 @@ here but I actually want
 00:32:55.666 --> 00:32:58.006 A:middle
 to see this in my main
 editor and I actually
-
-00:32:58.006 --> 00:33:00.506 A:middle
-with that problem right,
-right at my fingertips.
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -3206,10 +3086,6 @@ my ViewController.
 
 00:33:50.476 --> 00:33:51.026 A:middle
 [ Applause ]
-
-00:33:51.026 --> 00:34:00.086 A:middle
-And now I'm going to change
-my orientation to landscape.
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -3308,10 +3184,6 @@ punch in a value
 if I know what priority
 I'm going for
 
-00:34:59.816 --> 00:35:01.646 A:middle
-but I can also get
-some suggestions now
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -3393,10 +3265,6 @@ to fix that position and size.
 00:35:53.226 --> 00:35:56.856 A:middle
 I showed you three ways to add
 constraints, using Control-Drag
-
-00:35:56.856 --> 00:36:01.036 A:middle
-for that fine control, using
-the Auto Layout resolving menu
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -3496,10 +3364,6 @@ through intermediate states.
 00:36:57.726 --> 00:36:59.676 A:middle
 And you can think of this like
 you would think of writing code.
-
-00:36:59.676 --> 00:37:01.796 A:middle
-If you were to build and
-run your app in the middle
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -3605,10 +3469,6 @@ have ambiguous frames.
 You can get an ambiguous
 frame simply
 
-00:37:58.076 --> 00:38:00.296 A:middle
-by just not adding enough
-constraints to your view.
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -3709,10 +3569,6 @@ your view and it could be
 
 00:38:58.546 --> 00:38:59.706 A:middle
 as simple as this example here.
-
-00:38:59.706 --> 00:39:01.936 A:middle
-I've added two-- two
-height constraints
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -3893,10 +3749,6 @@ constraint turned orange
 00:40:55.726 --> 00:40:56.906 A:middle
 and I got this little badge.
 
-00:40:56.996 --> 00:41:00.246 A:middle
-So, that tells me that it's
-currently 32 point shorter
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -3988,10 +3840,6 @@ So instead, what I'm going
 00:41:54.226 --> 00:41:55.796 A:middle
 to do is create an Equal
 Heights constraint.
-
-00:41:56.556 --> 00:42:00.836 A:middle
-I'm going to Control-Drag down
-here and choose Equal Heights.
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -4169,10 +4017,6 @@ position or have the wrong set.
 So, let's go back to the
 menu and update their frames.
 
-00:43:59.496 --> 00:44:02.406 A:middle
-This time, I want to
-point out the fact
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -4260,10 +4104,6 @@ and it has a prototype cell.
 00:44:57.116 --> 00:44:59.226 A:middle
 That prototype cell is going
 to get reused at runtime
-
-00:44:59.226 --> 00:45:01.376 A:middle
-for every saved game
-that the player can load.
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -4354,10 +4194,6 @@ constraint, that's just going
 00:45:55.206 --> 00:45:56.416 A:middle
 to pin it to the left
 side of the cell.
-
-00:45:56.976 --> 00:46:00.466 A:middle
-And when I did that, it gave
-me an orange constraint.
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -4453,10 +4289,6 @@ my constraints turn blue
 and you can see now I
 have four constraints.
 
-00:46:59.156 --> 00:47:02.256 A:middle
-And these are enough to
-fully specify the layout
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -4536,10 +4368,6 @@ off the edge of the cell,
 00:47:54.056 --> 00:47:57.046 A:middle
 and it's actually occluding
 my disclosure indicator here.
-
-00:47:58.236 --> 00:48:00.196 A:middle
-So, what I want to do
-is add a little padding
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -4638,10 +4466,6 @@ So, let's do that.
 If you look here by my
 load game view controller,
 
-00:48:59.916 --> 00:49:01.946 A:middle
-you can see I have
-this button here.
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -4724,10 +4548,6 @@ priority to be lower
 than my Date label's
 content priority.
 
-00:49:57.236 --> 00:50:01.116 A:middle
-If I click on this button
-here, it gives me a suggestion
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -4807,10 +4627,6 @@ defined your own custom
 
 00:50:54.506 --> 00:50:56.696 A:middle
 controlling code.
-
-00:50:56.756 --> 00:51:00.076 A:middle
-And so for this example,
-let's imagine that instead
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -4905,10 +4721,6 @@ intrinsic content size
 00:51:55.266 --> 00:51:56.306 A:middle
 that I have implemented in code.
 
-00:51:57.236 --> 00:52:04.366 A:middle
-And when I delete these
-height constraints,
-
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
 
@@ -4990,10 +4802,6 @@ misplaced or ambiguous
 00:52:53.386 --> 00:52:56.366 A:middle
 or you can get a quick look
 at all the unresolved issues
-
-00:52:56.366 --> 00:53:00.216 A:middle
-in your document using the mini
-navigator, issue navigator.
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
@@ -5086,10 +4894,6 @@ and of course support for iOS 7,
 00:53:57.446 --> 00:53:59.466 A:middle
 Xcode 5 brings along
 a new readable
-
-00:53:59.466 --> 00:54:01.056 A:middle
-and diff-able XML
-format for this.
 
 WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:181083,LOCAL:00:00:00.000
